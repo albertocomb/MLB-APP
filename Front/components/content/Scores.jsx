@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import moment from 'moment';
 
 function Scores() {
     const [gamesData, setGamesData] = useState([]);
@@ -28,7 +29,7 @@ function Scores() {
             <ul>
                 {gamesData.map(game => (
                     <li key={game.gamePk}>
-                        {game.gameDate} - {game.teams.home.team.name} vs {game.teams.away.team.name}
+                        {moment(game.gameDate).format('MMMM Do YYYY, h:mm a')} - {game.teams.home.team.name} vs {game.teams.away.team.name}
                         <br />
                         Status: {game.status.detailedState}
                         <br />
