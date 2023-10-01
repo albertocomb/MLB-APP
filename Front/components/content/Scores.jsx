@@ -28,7 +28,7 @@ function Scores() {
             <ul>
                 {gamesData.map(game => (
                     <li key={game.gamePk}>
-                        {game.teams.home.team.name} vs {game.teams.away.team.name}
+                        {game.gameDate} - {game.teams.home.team.name} vs {game.teams.away.team.name}
                         <br />
                         Status: {game.status.detailedState}
                         <br />
