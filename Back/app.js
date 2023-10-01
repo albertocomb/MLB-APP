@@ -1,12 +1,11 @@
 const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const cors = require('cors'); // Importa la biblioteca cors
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
 
-// Habilita CORS para todas las rutas y permite el acceso desde cualquier origen
 app.use(cors({ origin: '*' }));
 
 app.get('/news', async (req, res) => {

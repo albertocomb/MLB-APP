@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importa las dependencias de React Router
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigator from '../components/navbar/navbar';
 import Home from '../components/content/Home';
-import News from '../components/content/News'; // Importa tu componente de la página de noticias
-import Scores from '../components/content/Scores'; // Importa tu componente de la página de puntajes
+import News from '../components/content/News';
+import Scores from '../components/content/Scores';
 import Players from '../components/content/Players';
 function App() {
   return (
